@@ -23,15 +23,15 @@ export default function Home() {
 
   return (
     <>
-      <header>
-        <nav>
+      <header style={{ position: 'sticky', top: 0, zIndex: 100 }}>
+        <nav style={{ backgroundColor: 'black', color: 'white', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem' }}>
           <div>FOSSMeet'24</div>
-          <ul>
-            <li><a href="/">Workshops</a></li>
-            <li><a href="/">Speakers</a></li>
-            <li><a href="/">Schedule</a></li>
-            <li><a href="/">Sponsors</a></li>
-            <li><a href="/">Contact</a></li>
+          <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
+            <li style={{ marginRight: '1rem' }}><a href="/">Workshops</a></li>
+            <li style={{ marginRight: '1rem' }}><a href="/">Speakers</a></li>
+            <li style={{ marginRight: '1rem' }}><a href="/">Schedule</a></li>
+            <li style={{ marginRight: '1rem' }}><a href="/">Sponsors</a></li>
+            <li style={{ marginRight: '1rem' }}><a href="/">Contact</a></li>
             <li><a href="/">Register</a></li>
           </ul>
         </nav>
