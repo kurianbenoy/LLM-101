@@ -5,7 +5,7 @@ import Link from 'next/link'; // Import Link from Next.js
 import Image from 'next/image'; // Import Image from Next.js
 
 export default function Home() {
-  const [vantaEffect, setVantaEffect] = useState(null);
+  const [vantaEffect, setVantaEffect] = useState<any>(null);
   const ref = useRef(null);
 
   useEffect(() => {
