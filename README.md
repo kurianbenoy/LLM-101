@@ -10,6 +10,8 @@ Content for  our workshop at FOSSMEET.
 
 a) https://kurianbenoy.com/talks/nitc-fossmeet-2024/llm-101.html#/title-slide 
 
+b) [Webapp we build as fossmeet website](https://llm-101-pi.vercel.app/)
+
 3. OpenAI API demo.
 
 a) https://colab.research.google.com/drive/11PPbnIsRpkM_ENyxpySS7kNTxuq2Nd2o?usp=sharing 
