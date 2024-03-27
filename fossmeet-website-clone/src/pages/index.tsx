@@ -1,6 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import * as THREE from 'three';
 import DOTS from 'vanta/dist/vanta.dots.min';
+import Link from 'next/link'; // Import Link from Next.js
+import Image from 'next/image'; // Import Image from Next.js
 
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -26,21 +28,21 @@ export default function Home() {
     <div className='main-part'>
       <header style={{ position: 'sticky', top: 0, zIndex: 100 }}>
         <nav style={{ backgroundColor: 'black', color: 'white', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem' }}>
-          <div>FOSSMeet'24</div>
+          <div>FOSSMeet24</div>
           <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
-            <li style={{ marginRight: '1rem' }}><a href="/">Workshops</a></li>
-            <li style={{ marginRight: '1rem' }}><a href="/">Speakers</a></li>
-            <li style={{ marginRight: '1rem' }}><a href="/">Schedule</a></li>
-            <li style={{ marginRight: '1rem' }}><a href="/">Sponsors</a></li>
-            <li style={{ marginRight: '1rem' }}><a href="/">Contact</a></li>
-            <li><a href="/">Register</a></li>
+            <li style={{ marginRight: '1rem' }}><Link href="/">Workshops</Link></li>
+            <li style={{ marginRight: '1rem' }}><Link href="/">Speakers</Link></li>
+            <li style={{ marginRight: '1rem' }}><Link href="/">Schedule</Link></li>
+            <li style={{ marginRight: '1rem' }}><Link href="/">Sponsors</Link></li>
+            <li style={{ marginRight: '1rem' }}><Link href="/">Contact</Link></li>
+            <li><Link href="/">Register</Link></li>
           </ul>
         </nav>
       </header>
 
       <main ref={ref}>
         <section className="hero">
-          <img src="https://www.fossmeet.net/hero.svg" alt="FOSSMEET 2024" />
+          <Image src="https://www.fossmeet.net/hero.svg" alt="FOSSMEET 2024" width={500} height={300} />
           <h1>Welcome to FOSSMEET 2024</h1>
         </section>
 
@@ -50,11 +52,11 @@ export default function Home() {
           <h2>Sponsors</h2>
           <div>
             <h3>Gold Sponsor</h3>
-            <img src="https://www.fossmeet.net/nilenso.svg" alt="Nilenso" />
+            <Image src="https://www.fossmeet.net/nilenso.svg" alt="Nilenso" width={200} height={100} />
           </div>
           <div>
             <h3>Silver Sponsor</h3>
-            <img src="https://www.fossmeet.net/foss-united.svg" alt="FOSSUnited" />
+            <Image src="https://www.fossmeet.net/foss-united.svg" alt="FOSSUnited" width={200} height={100} />
           </div>
         </section>
       </main>
