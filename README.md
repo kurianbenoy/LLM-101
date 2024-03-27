@@ -1,6 +1,8 @@
 # LLM-101
 Content for  our workshop at FOSSMEET. 
 
+[Workshop shortened link](https://tiny.cc/llm102)
+
 ## Contents
 
 1. Generative AI overview + generative applications demo.
