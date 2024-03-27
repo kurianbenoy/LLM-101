@@ -17,7 +17,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(-/=-foreground-rgb)); */
   background: linear-gradient(
       to bottom,
       transparent,
@@ -32,8 +32,16 @@ body {
   }
 }
 
+main{
+  background: none;
+  background-color: white;
+}
+
 .chatbot {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+.main-part{
+  background-color: white;
 }

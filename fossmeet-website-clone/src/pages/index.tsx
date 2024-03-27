@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import * as THREE from 'three';
 import DOTS from 'vanta/dist/vanta.dots.min';
 
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(null);
+  const ref = useRef(null);
 
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
         DOTS({
-          el: document.body,
+          el: ref.current,
           THREE: THREE,
           color: 0x1e88e5,
           backgroundColor: 0x0d47a1,
@@ -22,7 +23,7 @@ export default function Home() {
   }, [vantaEffect]);
 
   return (
-    <>
+    <div className='main-part'>
       <header style={{ position: 'sticky', top: 0, zIndex: 100 }}>
         <nav style={{ backgroundColor: 'black', color: 'white', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem' }}>
           <div>FOSSMeet'24</div>
@@ -37,7 +38,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <main>
+      <main ref={ref}>
         <section className="hero">
           <img src="https://www.fossmeet.net/hero.svg" alt="FOSSMEET 2024" />
           <h1>Welcome to FOSSMEET 2024</h1>
@@ -74,6 +75,6 @@ export default function Home() {
       <div className="chatbot">
         <input type="text" placeholder="Ask a question..." />
       </div>
-    </>
+    </div>
   );
 }
